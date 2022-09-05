@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
 
 :root {
-    --yellow: #ffd500;
-    --red: #d11013;
-    --blue: #006cb6 ;
+    --yellow: #ffacac;
+    --red: #ff7174;
 }
 body {
     height: 100vh;
@@ -53,7 +52,7 @@ body {
     }
 }
 .navbar__content img {
-    width: 50px;
+    width: 80px;
 }
 .navbar__content ul {
     display: flex;
@@ -64,7 +63,7 @@ body {
 }
 .navbar__content ul li a {
     font-weight: 300;
-    color: var(--red);
+    color: #96b5b0;
     text-decoration: none;
 }
 
@@ -80,14 +79,16 @@ body {
     animation: 3s main-content 0.5s ease-in-out;
 }
 .main-content p:first-child {
-    margin: 0 0 -14px 44px;
+    margin: 0 0 -14px 0px;
     font-size: 36px;
     font-weight: 300;
+    color: var(--yellow);
 }
 .main-content h1 {
     margin: 0 0 28px 0;
     font-size: 48px;
     font-weight: 700;
+    color: var(--yellow);
 }
 .main-content p:last-child {
     width: 60%;
@@ -137,8 +138,8 @@ body {
 }
 .side-content img {
     grid-row: 1 / 2;
-    grid-column: 2 / 6;
-    width: 100%;
+    grid-column: 1 / 6;
+    width: 135%;
 
     animation: 2s side-content-img 0.5s ease-in-out;
 }
@@ -154,7 +155,7 @@ body {
     grid-column: 4 / 7;
     grid-row: 1 / 2;
     height: 100%;
-    background: var(--yellow);
+    background: rgb(20, 20, 20);
 }
 
 /* FOOTER */
@@ -162,7 +163,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-    background: var(--yellow);
+    background: rgb(20, 20, 20);
     border-radius: 0 50px 0 0;
 
     transform: translateY(100%);
@@ -185,7 +186,7 @@ body {
     width: 100px;
     height: 50%;
     border-radius: 10px 10px 0 0;
-    background: var(--blue);
+    background: #ffacaca7;
 }
 .footer div:hover img {
     cursor: pointer;
@@ -194,8 +195,8 @@ body {
 }
 .footer div img {
     position: absolute;
-    width: 130px;
-    bottom: 30px;  
+    width: 200px;
+    bottom: 20px;  
     transform: translateY(0px) scale(1);
     transition: transform 0.5s ease-in-out; 
 }
@@ -231,7 +232,7 @@ body {
     width: 30px;
     height: 30px;
     margin: 10px;
-    background: rgb(255, 214, 30);
+    background: rgb(255, 158, 158);
     border-radius: 50%;
 
     transform: scale(0);
@@ -280,7 +281,7 @@ body {
 .modal__content {
     display: grid;
     place-items: center;
-    background: white;
+    background: rgb(240, 240, 240);
     width: 50%;
     height: 50%;
 }
@@ -299,6 +300,7 @@ body {
     font-size: 20px;
     color: white;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
     background: var(--red);
 }
@@ -334,7 +336,8 @@ body {
 }
 
 .card img {
-    width: 100%;
+    position: absolute;    
+    width: 200px;
 }
 
 #radio-1:checked ~ .cards #card-1,
