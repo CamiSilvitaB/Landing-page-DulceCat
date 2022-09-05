@@ -37,13 +37,13 @@
             </section>
 
             <section class="footer">
-                <div>
+                <div id="button1">
                     <img src="https://i.ibb.co/tKWqw8J/spiderman.png" alt="Spiderman Lego">
                 </div>
-                <div>
+                <div id="button2">
                     <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="Robin Lego">
                 </div>
-                <div>
+                <div id="button3">
                     <img src="https://i.ibb.co/M18p91c/batman.webp" alt="Batman Lego">
                 </div>
             </section>
@@ -55,9 +55,56 @@
             <div></div>
         </section>
         <!-- Modal -->
-        <section>
+        <section class="modal hidden">
+            <div class="modal__content">
+                <img class="modal__content--close" src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png"/>
 
+                <div class="modal__content--slider">
+                    <input type="radio" name="slider-1" id="radio-1" checked>
+                    <input type="radio" name="slider-1" id="radio-2">
+                    <input type="radio" name="slider-1" id="radio-3">
+
+                    <div class="cards">
+                        <label for="radio-1" class="card" id="card-1">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="" class="card__img">
+                        </label>
+                        <label for="radio-2" class="card" id="card-2">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="" class="card__img" >
+                        </label>
+                        <label for="radio-3" class="card" id="card-3">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="" class="card__img">
+                        </label>
+                    </div>
+                </div>
+                <button class="modal__content__button">Lo quiero!</button>
+            </div>
         </section>
     </div>
 </body>
+<script>
+    const modal = document.querySelector ('.modal')
+    const buttom1 = document.querySelector ('#button1')
+    const buttom2 = document.querySelector ('#button2')
+    const buttom3 = document.querySelector ('#button3')
+    const closebuttom = document.querySelector ('.modal__content--close')
+
+    button1.addEventListener('click',()=> {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+    button2.addEventListener('click',()=> {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+    button3.addEventListener('click',()=> {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+
+    closebuttom.addEventListener('click',()=> {
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+</script>
 </html>
